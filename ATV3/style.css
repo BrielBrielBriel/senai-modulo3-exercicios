@@ -1,0 +1,43 @@
+body {
+    font-family:'Lucida Sans';
+    background-color: #648285;
+    text-align: center;
+}
+
+header {
+    background-color: #A3C4C2;
+}
+
+main{
+    background-color: darkgray;
+}
+
+h1 {
+    color: #648285;
+}
+
+p {
+    font-size: 150%;
+    color: #080d0d;
+}
+
+p.texto {
+    font-weight: 800;
+}
+
+#madmanmoon {
+    font-family: 'Lucida Console';
+    color: #f3daaa;
+}
+
+div {
+    width: auto;
+    margin: auto;
+    padding: auto;
+    background-color: #b4a68b;
+}
+
+footer {
+    background-color: #f3daaa;
+    text-align: left;
+}
