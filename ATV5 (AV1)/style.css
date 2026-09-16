@@ -1,0 +1,178 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F3F4F6;
+    color: #111827;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+header img {
+    width: 10%;   
+}
+
+.links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-size: large;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex: 1;
+    align-content: center;
+    background-color: #6D28D9;
+    border-radius: 15px;
+    padding: 5%;
+    margin: 3%;
+    gap: 20px;
+    color: white;
+}
+
+.button {
+    background-color: #EC4899;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    width: 10%;
+    padding: 2%;
+}
+
+main {
+    text-align: center;
+}
+
+.beneficios {
+    display: flex;
+    padding: 2%;
+    gap: 20px;
+}
+
+.beneficios article {
+    background-color: #2563EB;
+    border-radius: 15px;
+    border-style: solid;
+    width: 60%;
+    padding: 3%;
+}
+
+.beneficios h3 {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.beneficios p {
+    font-size: large;
+}
+
+.sobre {
+    background-color: #6D28D9;
+    border-radius: 15px;
+    color: white;
+    padding: 2%;
+    margin: 3%;
+}
+
+.lista-beneficios {
+    background-color: #2563EB;
+    border-radius: 15px;
+    color: white;
+    padding: 2%;
+    margin: 3%;
+    text-align: center;
+}
+
+.lista-beneficios h2 {
+    font-size: x-large;
+    padding: 1%;
+}
+
+.lista-beneficios ul {
+    list-style: none;
+}
+
+.lista-beneficios li {
+    padding: 1%;
+    font-size: larger;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form fieldset {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3%;
+    margin: auto;
+    width: 50%;
+}
+
+form fieldset legend {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.dados-pessoais label {
+    display: flex;
+}
+
+.dados-pessoais input {
+    border-radius: 15px;
+    width: 100%;
+    padding: 0.5%;
+    border-style: solid;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: row;
+}
+
+.perfil .voce-e {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.perfil .interesse {
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.observacoes {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.observacoes .mensagem {
+    display: flex;
+}
+
+.observacoes .email-novidades {
+    display: flex;
+    flex-direction: row;
+}
+
+.localização input{
+    border-radius: 15px;
+    width: 100%;
+    padding: 0.5%;
+    border-style: solid;
+}

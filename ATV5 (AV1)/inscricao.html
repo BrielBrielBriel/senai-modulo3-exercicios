@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Inscrição</title>
+    </head>
+    <body>
+        <header>
+            <img src="./img/te-logo.png" alt="Tech Experience Logo" title="Tech Experience 2026">
+            <h1>Tech Experience 2026</h1>
+            
+            <section class="links">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="inscricao.html">Inscrição</a></li>
+                </ul>
+            </section>
+        </header>
+
+        <main>
+            <form action="#">
+                <fieldset class="dados-pessoais">
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                    
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email">
+                    
+                    <label for="tel">Telefone: </label>
+                    <input type="tel" name="tel" id="tel">
+                    
+                    <label for="dt_nasc">Data de nascimento: </label>
+                    <input type="date" name="dt_nasc" id="dt_nasc">
+                </fieldset>
+                
+                <fieldset class="perfil">
+                    <legend>Perfil</legend>
+                    
+                    <section class="voce-e">
+                        
+                        <label for="voce">Você é: </label>
+                        
+                        <section class="opcao">
+                            <input type="radio" name="estudante" id="estudante" class="voce">
+                            <label for="estudante">Estudante</label>
+                        </section>
+                        
+                        <section class="opcao">
+                            <input type="radio" name="professor" id="professor" class="voce">
+                            <label for="professor">Professor</label>
+                        </section>
+                            
+                        <section class="opcao">
+                            <input type="radio" name="profissional" id="profissional" class="voce">
+                            <label for="profissional">Profissional da área</label>
+                        </section>
+
+                    </section>
+
+                    <section class="interesse">
+                        <label for="area">Áreas de interesse: </label>
+                        
+                        <section class="opcao">
+                            <input type="checkbox" name="frontend" id="frontend" class="area">
+                            <label for="frontend">Frontend</label>
+                        </section>
+                        
+                        <section class="opcao">
+                            <input type="checkbox" name="backend" id="backend" class="area">
+                            <label for="backend">Backend</label>
+                        </section>
+                        
+                        <section class="opcao">
+                            <input type="checkbox" name="mobile" id="mobile" class="area">
+                            <label for="mobile">Mobile</label>
+                        </section>
+                            
+                        <section class="opcao">
+                            <input type="checkbox" name="dados" id="dados" class="area">
+                            <label for="dados">Dados</label>
+                        </section>
+                    </section>
+                </fieldset>
+
+                <fieldset class="localizacao">
+                    <legend>Localização</legend>
+
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" name="cidade" id="cidade">
+
+                    <label for="estado">Estado: </label>
+                    <select name="estado" id="estado">
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PA">Paraíba</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="observacoes">
+                    <legend>Observações</legend>
+                    
+                    <section class="mensagem">
+                        <label for="observacoes">Mensagem: </label>
+                        <textarea name="observacoes" id="observacoes"></textarea>
+                    </section>
+
+                    <section class="email-novidades">
+                        <label for="novidades">Desejo receber novidades por e-mail </label>
+                        <input type="checkbox" name="novidades" id="novidades">
+                    </section>
+                </fieldset>
+                
+                <section class="botoes">
+                    <input type="reset">
+                    <input type="submit">
+                </section>
+
+            </form>
+        </main>
+    </body>
+</html>
