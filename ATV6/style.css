@@ -1,0 +1,296 @@
+/* Etapa 1 — Configuração e estilos globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --fundo: #0b1120;
+    --verde: #00e6a0;
+    --branco: #f5f7fa;
+    --texto: #b9c4d5;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Etapa 2 — Cabeçalho, menu e navegação */
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.marca img {
+    height: 80px;
+    width: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.navegacao h1 {
+    color: var(--verde);
+    font-size: 22px;
+}
+
+.menu a:hover {
+    color: var(--verde);
+    transition: 0.4s;
+}
+
+
+/* Etapa 3 — Banner principal e identidade visual */
+
+.hero {
+    background: linear-gradient(--fundo,--verde) url('imagens/banner.jpg') no-repeat fixed center;
+    
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+
+.hero-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-texto {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    align-content: center;
+    color: var(--branco);
+}
+
+.hero-texto span {
+    color: var(--verde);
+}
+
+.hero-texto p {
+    color: var(--texto);
+}
+
+.hero-imagem {
+    flex: 1;
+}
+
+.hero-imagem img {
+    border-radius: 20px;
+}
+
+.hero-texto h2 {
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.hero-texto p {
+    max-width: fit-content;
+}
+
+.etiqueta {
+    color: var(--verde);
+}
+
+.botao {
+    background: var(--verde);
+    color: var(--fundo);
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    max-width: fit-content;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px var(--branco);
+}
+
+/* Etapa 4 — Cartões de produtos e serviços */
+
+.grade-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.cartao {
+    flex: 1 1 240px;
+    background-color: var(--fundo);
+    border: var(--branco);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.cartao img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.cartao-conteudo {
+    padding: 26px;
+}
+
+.cartao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px var(--verde);
+    border-color: var(--branco);
+}
+
+.cartao a {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: var(--verde);
+}
+
+/* Etapa 5 — Sobre e contato */
+.pagina-banner {
+    text-align: center;
+    margin: 20px;
+}
+
+.historia {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    margin-top: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.historia img {
+    border-radius: 20px;
+}
+
+.valores {
+    background-color: var(--fundo);
+    padding: 80px 0;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.valor {
+    border-style: solid;
+    border-color: var(--verde);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.valor:hover {
+    box-shadow: 0 0 10px var(--branco);
+    transform: translateY(-5px);
+}
+
+.grade-valores {
+    display: flex;
+    gap: 55px;
+    margin-top: 40px;
+}
+
+.contanto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.informacao {
+    margin: 15px 0;
+}
+
+.formulario {
+    flex: 1.2;
+    background-color: var(--fundo);
+    box-shadow: 0 0 10px var(--verde);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.formulario input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px none;
+    border-radius: 10px;
+}
+
+.formulario button {
+    border-style: none;
+    margin-top: 10px;
+}
+
+.formulario label {
+    font-weight: bold;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+}
+
+.chamada {
+    margin: 20px;
+}
+
+.chamada-conteudo {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    font-size: small;
+    text-align: center;
+}
+
+
