@@ -66,6 +66,30 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
+.modo-claro {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-left: 60px;
+}
+
+.modo-escuro {
+    background-color: rgb(54, 54, 54);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-left: 60px;
+}
+
+.modo-claro:hover {
+    transform: translateY(-3px);
+}
+
+.modo-escuro:hover {
+    transform: translateY(-3px);
+}
+
 /* ============ INÍCIO ============ */
 
 .hero {
@@ -92,7 +116,7 @@ nav a:hover {
 }
 
 .botao {
-    background: #020000;
+    background: rgb(0, 0, 0);
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -141,7 +165,7 @@ nav a:hover {
 
 #titulo-servicos {
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 60px;
     text-align: center;
 }
 
@@ -161,6 +185,9 @@ nav a:hover {
     box-shadow: 0 20px 20px rgba(0,0,0,0.3);
 }
 
+.servico:hover {
+    transform: translateY(-5px);
+}
 
 footer {
     text-align: center;
@@ -179,4 +206,58 @@ footer p {
 
 footer img {
     width: 18px;
+}
+
+/* ============ CONTATO ============ */
+
+#titulo-contato {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#mensagem-contato {
+    text-align: center;
+}
+
+form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-input input {
+    height: 25px;
+    width: 350px;
+    border-style: none;
+    background-color: rgb(168, 168, 168);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+#area-mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#mensagem {
+    border-style: none;
+    background-color: rgb(168, 168, 168);
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 0.9rem
 }

@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Serviços</title>
         <link rel="stylesheet" href="assets/css/style.css">
-        <script type="module" src="assets/js/script.js"></script>
+        <script type="module" src="assets/js/script2.js"></script>
     </head>
-    <body>
+    <body id="corpo-servicos">
         <header>
             <section class="logo">
                 <h1>Tech Solutions</h1>
             </section>
             
+            <div id="modo-claro-servicos" class="modo-claro" title="Modo Claro"></div>
             <div id="reset-servicos" class="resetar" title="Resetar"></div>
+            <div id="modo-escuro-servicos" class="modo-escuro" title="Modo Escuro"></div>
             
             <nav>
                 <a href="index.html">Início</a>
@@ -25,43 +27,40 @@
         <main>
             <h2 id="titulo-servicos">Nossos Serviços</h2>
 
-            <section class="servicos">
-                <article class="servico">
+            <section id="servicos" class="servicos">
+                <article id="servico-1" class="servico">
                     <h3>Desenvolvimento de Sites</h3>
                     
                     <p>
                         Criamos sites modernos, responsivos e personalizados para empre-sas 
                         que desejam fortalecer sua presença digital e apresentar seus produtos 
-                        e serviços na internet. 
+                        e serviços na internet. <span id="mensagem-dev-site"></span>
                     </p>
                     
-                    <span id="mensagem-dev-site"></span>
 
                     <button id="botao-dev-site" class="botao">Saiba mais</button>
                 </article>
 
-                <article class="servico">
+                <article id="servico-2" class="servico">
                     <h3>Desenvolvimento de Aplicativos</h3>
 
                     <p>
                         Desenvolvemos aplicativos para facilitar o acesso dos 
                         clientes aos serviços e informações da empresa. 
+                        <span id="mensagem-dev-app"></span>
                     </p>
-                    
-                    <span id="mensagem-dev-app"></span>
 
                     <button id="botao-dev-app" class="botao">Saiba mais</button>
                 </article>
 
-                <article class="servico">
+                <article id="servico-3" class="servico">
                     <h3>Sistemas para Empresas</h3>
 
                     <p>
                         Criamos sistemas web para ajudar empresas a organizar 
-                        clientes, produtos, informações e processos internos.
+                        clientes, produtos, informações e processos internos. 
+                        <span id="mensagem-sistemas"></span>
                     </p>
-
-                    <span id="mensagem-sistemas"></span>
 
                     <button id="botao-sistemas" class="botao">Saiba mais</button>
                 </article>

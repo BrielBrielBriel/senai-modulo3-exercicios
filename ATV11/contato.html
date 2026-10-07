@@ -3,17 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contanto</title>
         <link rel="stylesheet" href="assets/css/style.css">
-        <script type="module" src="assets/js/script.js"></script>
+        <script type="module" src="assets/js/script3.js"></script>
+        <title>Contato</title>
     </head>
-    <body>
+    <body id="corpo-contato">
         <header>
             <section class="logo">
                 <h1>Tech Solutions</h1>
             </section>
             
+            <div id="modo-claro-contato" class="modo-claro" title="Modo Claro"></div>
             <div id="reset-contato" class="resetar" title="Resetar"></div>
+            <div id="modo-escuro-contato" class="modo-escuro" title="Modo Claro"></div>
             
             <nav>
                 <a href="index.html">Início</a>
@@ -23,16 +25,35 @@
         </header>
 
         <main>
+            <h2 id="titulo-contato">Gostou dos nossos serviços?</h2>
             
-            
-            <form action="#">
-                <label for="nome">Nome Completo</label>
-                <input type="text" id="nome" placeholder="Digite seu nome">
+            <p id="mensagem-contato">
+                Preencha o formulário abaixo e nossa equipe 
+                entrará em contato com você.
+            </p>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Digite seu email">
+            <form id="formulario" action="#">
+                <div class="form-input">
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                
+                <div class="form-input">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                    
+                <div class="form-input">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" name="assunto" id="assunto">
+                </div>
 
+                <div id="area-mensagem" class="form-input">
+                    <label for="mensagem">Deixe uma mensagem: </label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
 
+                <input type="submit" id="botao-contato" class="botao">
             </form>
         </main>
 
